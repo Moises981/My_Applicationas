@@ -1,0 +1,156 @@
+{
+  "project_info": {
+    "project_number": "732055400473",
+    "firebase_url": "https://hello123-94ab6-default-rtdb.firebaseio.com",
+    "project_id": "hello123-94ab6",
+    "storage_bucket": "hello123-94ab6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732055400473:android:3c499cc9c61631ca1afa88",
+        "android_client_info": {
+          "package_name": "com.example.foodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732055400473-uidabg5js3rfkchp4f7igd4t7o7v9ldi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAKAABFiwPYzAiMddPlTzrAOqAoBa-Od0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732055400473-uidabg5js3rfkchp4f7igd4t7o7v9ldi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732055400473:android:ab532bb353aa1ef41afa88",
+        "android_client_info": {
+          "package_name": "com.example.hello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732055400473-uidabg5js3rfkchp4f7igd4t7o7v9ldi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAKAABFiwPYzAiMddPlTzrAOqAoBa-Od0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732055400473-uidabg5js3rfkchp4f7igd4t7o7v9ldi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732055400473:android:767249b07db4a83a1afa88",
+        "android_client_info": {
+          "package_name": "com.example.misfotografias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732055400473-uidabg5js3rfkchp4f7igd4t7o7v9ldi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAKAABFiwPYzAiMddPlTzrAOqAoBa-Od0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732055400473-uidabg5js3rfkchp4f7igd4t7o7v9ldi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732055400473:android:808cae42ee5d3e981afa88",
+        "android_client_info": {
+          "package_name": "com.example.myapplicationas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732055400473-uidabg5js3rfkchp4f7igd4t7o7v9ldi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAKAABFiwPYzAiMddPlTzrAOqAoBa-Od0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732055400473-uidabg5js3rfkchp4f7igd4t7o7v9ldi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732055400473:android:5c1183211b6dd6891afa88",
+        "android_client_info": {
+          "package_name": "com.example.ofertas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732055400473-uidabg5js3rfkchp4f7igd4t7o7v9ldi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAKAABFiwPYzAiMddPlTzrAOqAoBa-Od0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732055400473-uidabg5js3rfkchp4f7igd4t7o7v9ldi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

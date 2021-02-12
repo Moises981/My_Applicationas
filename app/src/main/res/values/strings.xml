@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Cloud Storage</string>
+    <string name="main_label_camera">Cámara</string>
+    <string name="main_label_gallery">Galería</string>
+    <string name="main_label_upload">Subir</string>
+    <string name="main_message_question_upload">¿Desea subir la imagen a la nube?</string>
+    <string name="main_message_upload_success">Imagen subida!</string>
+    <string name="main_message_done">Listo!</string>
+    <string name="main_message_upload_error">Error al subir!</string>
+    <string name="main_message_delete_success">Imagen eleminada!</string>
+    <string name="main_message_delete_error">Error al eliminar la imagen!</string>
+    <string name="main_message_error_notFound">La imagen no encontrada!</string>
+</resources>

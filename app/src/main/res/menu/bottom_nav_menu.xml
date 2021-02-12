@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_gallery"
+        android:icon="@drawable/ic_baseline_image_24"
+        android:title="@string/main_label_gallery" />
+
+    <item
+        android:id="@+id/navigation_camera"
+        android:icon="@drawable/ic_baseline_camera_alt_24"
+        android:title="@string/main_label_camera" />
+
+</menu>
