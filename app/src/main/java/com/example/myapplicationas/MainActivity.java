@@ -1,8 +1,12 @@
 package com.example.myapplicationas;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -29,6 +33,8 @@ import com.google.firebase.storage.UploadTask;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -202,11 +208,12 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()){
                 case R.id.navigation_gallery:
                     bnd.message.setText(R.string.main_label_gallery);
-                    fromGallery();
+                    CheckPermissiontoApp(Manifest.permission.READ_EXTERNAL_STORAGE,RP_STORAGE);
+                    //fromGallery();
                     return  true;
                 case R.id.navigation_camera:
                     bnd.message.setText(R.string.main_label_camera);
-                    dispatchtakePictureIntent();
+                    CheckPermissiontoApp(Manifest.permission.CAMERA,RP_CAMERA);
                     //fromCamera();
                     return  true;
             }
@@ -214,6 +221,39 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    private void CheckPermissiontoApp(String permission, int requestPermission) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if(ContextCompat.checkSelfPermission(this,permission) != PackageManager.PERMISSION_GRANTED){
+                ActivityCompat.requestPermissions(this,new String[]{permission},requestPermission);
+                return;
+            }
+        }
+
+        switch (requestPermission)
+        {
+            case RP_STORAGE:
+                fromGallery();
+                break;
+            case RP_CAMERA:
+                dispatchtakePictureIntent();
+                break;
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+        {
+            switch (requestCode)
+            {
+                case RP_STORAGE:
+                    fromGallery();
+                    break;
+
+            }
+        }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -276,6 +316,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void dispatchtakePictureIntent() {
         Intent takepicture = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        PackageManager data =  getPackageManager();
         if(takepicture.resolveActivity( getPackageManager()) != null)
         {
             File photoFile;
